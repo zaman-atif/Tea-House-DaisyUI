@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#FF0000',
                     }
                 }
             }
@@ -35,8 +36,8 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex flex-col justify-between items-center lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
@@ -46,7 +47,7 @@
                     <button class="btn btn-primary">Explore More</button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm" />
+                    <img src="images/banner.png" class="" />
                     <!-- ratings badge  -->
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-xl">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -134,7 +135,30 @@
                 <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
         </section>
-
+        <!-- super client section  -->
+        <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl px-16 py-24"
+            style="background: linear-gradient(270.00deg, rgb(255, 0, 0) 0%,rgb(255, 137, 56) 100%);">
+            <div class="spacey-5">
+                <h2 class="text-5xl font-extrabold text-white">
+                    Meet Our Super <br> Clients
+                </h2>
+                <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form,
+                    by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <button class="btn btn-primary">Show All</button>
+            </div>
+            <!-- review  -->
+            <div class="p-10 rounded-lg bg-white relative">
+                <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form,
+                    by injected humour, or randomised words which don't look even slightly believable.</p>
+                <h4 class="font-bold mt-5">
+                    Ilham Yuda
+                </h4>
+                <p class="font-medium">Businessman</p>
+            </div>
+        </section>
         <!-- News & Events Section  -->
         <section class="container mx-auto my-24">
             <h1 class="text-center text-5xl font-extrabold mb-5">News & Events</h1>
@@ -182,7 +206,55 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer class="px-4 lg:px-48 py-12 bg-base-200 text-base-content bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+        <div class="flex justify-between items-center my-24">
+            <img src="images/cup.png" alt="">
+            <p><span>Ready to get strated?</span>
+                <button class="btn btn-primary">Get Started</button>
+            </p>
+
+        </div>
+        <div class="footer">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button
+                            class="btn text-white join-item bg-gradient-to-r from-gradient-start to-gradient-end rounded-full"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="mt-10  text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
 </body>
 
 </html>
